@@ -1,0 +1,101 @@
+body {
+  /* font stuff never goes in universal selector! */
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 400;
+  /* font-size: 16px; */
+  line-height: 1.7;
+  color: $color-gray-dark-1;
+  box-sizing: border-box; /* Declare it here as a best practice, not in * {}. Makes it easier to edit/override later */
+}
+
+.heading-primary {
+  font-weight: 200;
+  color: $color-white;
+  text-transform: uppercase;
+
+  /* determines if the background part of an element is visible during animation */
+  /* fixes the little shake at the end of text animations (no one konws why it happens) */
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+
+  @include respond(tablet-portrait) {
+    margin-bottom: 2rem;
+  }
+
+  &--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 1.5rem;
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+      font-size: 4rem;
+    }
+    /*
+    animation-iteration-count: 3;
+    animation-delay: 3s;
+    */
+  }
+
+  &--sub {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.8rem;
+    animation-name: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  // Give text a gradient color!
+  display: inline-block;
+  color: $color-primary;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+
+  @supports (background-clip: text) or (-webkit-background-clip: text) {
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  @include respond(tablet-portrait) {
+    font-size: 3rem;
+  }
+  @include respond(phone) {
+    font-size: 2.5rem;
+  }
+
+  // &:hover {
+  //   transform: skewY(2deg) skewX(15deg) scale(1.1);
+  //   text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+  // }
+}
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

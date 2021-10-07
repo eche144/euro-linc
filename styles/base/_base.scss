@@ -1,0 +1,41 @@
+/* This is called a universal reset- it obliterates any browser-specific quirks */
+/* Don't forget the pseudo-elements! */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* override root font size; will be inherited by all rem's */
+/* VERY useful for responsive design!!! You just have to scale this one value for a media query and everything with rem's will scale with it :) */
+html {
+  /* This defines what 1rem is */
+  font-size: 62.5%; // 1rem = 10px;
+
+  // order matters! Media queries don't add spcecificity, so the latest one will always apply
+  @include respond(desktop-big) {
+    font-size: 75%; // 1rem = 12px
+  }
+  @include respond(tablet-landscape) {
+    font-size: 56.25%; // 1rem = 9px
+  }
+  @include respond(tablet-portrait) {
+    font-size: 50%; // 1rem = 8px
+  }
+}
+
+body {
+  box-sizing: border-box; /* Declare it here as a best practice, not in * {}. Makes it easier to edit/override later */
+  padding: 2rem;
+
+    @include respond(tablet-portrait) {
+      padding: 0;
+    }
+}
+
+::selection {
+  background-color: $color-secondary-light;
+  color: $color-white;
+}

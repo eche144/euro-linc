@@ -1,0 +1,47 @@
+@mixin clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// media query manager
+// 0 - 600px: phone
+// 601-p00px: tablet portrait
+// 901 - 1200px: tablet landscape
+// 1201 - 1800: desktop
+// 1801 +: big desktop
+
+@mixin respond-phone {
+  @media only screen and (max-width: 600px) { @content };
+}
+
+
+// $breakpoint argument choices. Developed desktop first (1200-1800px)
+// - phone
+// - tablet-portrait
+// - tablet-landscape
+// - desktop-big
+// use ems not rems for media queries!
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) { @content }; // 600px
+  }
+  @if $breakpoint == tablet-portrait {
+    @media only screen and (max-width: 56.25em) { @content }; // 900px
+  }
+  @if $breakpoint == tablet-landscape {
+    @media only screen and (max-width: 75em) { @content }; // 1200px
+  }
+  @if $breakpoint == desktop-big {
+    @media only screen and (min-width: 112.5em) { @content }; // 1800px
+  }
+}

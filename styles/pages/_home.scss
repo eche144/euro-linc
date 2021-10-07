@@ -1,0 +1,116 @@
+.section-about {
+  background-color: $color-gray-light-1;
+  padding: 25rem 1rem;
+  margin-top: -20vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-secondary-light, 1),
+      rgba($color-secondary, 1)
+    );
+  background-size: cover;
+  margin-top: -10rem;
+
+  transform: skewY(-7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
+
+  @include respond(tablet-portrait) {
+    padding: 10rem 1rem;
+  }
+}
+
+.section-activities {
+  background-color: $color-gray-light-1;
+  padding: 25rem 0 15rem 0;
+  margin-top: -10rem;
+
+  @include respond(tablet-portrait) {
+    padding: 20rem 1rem 10rem 1rem;
+  }
+}
+
+.section-stories {
+  padding: 15rem 0 5rem 0;
+  position: relative;
+
+  @include respond(tablet-portrait) {
+    padding: 10rem 1rem;
+  }
+}
+
+.section-contact {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+
+  @include respond(tablet-portrait) {
+    padding: 10rem 3rem;
+  }
+}
+
+.contact {
+  background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(https://source.unsplash.com/random/400x300);
+  background-size: 100%;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image: linear-gradient(
+      105deg,
+      rgba($color-white, 0.9) 0%,
+      rgba($color-white, 0.9) 50%,
+      transparent 50%
+    ),
+    url(https://source.unsplash.com/random/800x600);
+  }
+
+  @include respond(tablet-landscape) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 65%,
+        transparent 65%
+      ),
+      url(https://source.unsplash.com/random/800x600);
+      background-size: cover;
+  }
+
+  @include respond(tablet-portrait) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 100%,
+        transparent 100%
+      ),
+      url(https://source.unsplash.com/random/800x600);
+      background-size: cover;
+  }
+
+  &__form {
+    width: 50%;
+    padding: 6rem;
+
+    @include respond(tablet-landscape) {
+      width: 65%;
+    }
+
+    @include respond(tablet-portrait) {
+      width: 100%;
+      padding: 1rem;
+    }
+  }
+}

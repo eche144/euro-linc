@@ -1,0 +1,38 @@
+.feature-box {
+  background-color: rgba($color-white, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+  transition: transform 0.3s;
+
+  @include respond(tablet-portrait) {
+    padding: 2rem;
+  }
+
+  &__icon {
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 0.5rem;
+    stroke: currentColor;
+    color: $color-primary;
+    display: inline-block;
+
+    // @supports (background-clip: text) or (-webkit-background-clip: text) {
+    //   background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    //   -webkit-background-clip: text;
+    //   background-clip: text;
+    //   color: transparent;
+    //   stroke: transparent;
+    // }
+
+    @include respond(tablet-portrait) {
+      margin-bottom: 0;
+    }
+  }
+
+  // &:hover {
+  //   transform: translateY(-1.5rem) scale(1.03);
+  // }
+}
