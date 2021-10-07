@@ -9,7 +9,6 @@
     padding: 1rem 2rem;
     /* do not use just display: inline for elements with box-model */
     display: inline-block;
-    border-radius: 10rem;
     transition: all 0.2s;
     position: relative; /* So that its ::after pseudo-child can be absolutely positioned */
 

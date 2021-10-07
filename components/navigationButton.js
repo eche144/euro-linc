@@ -14,10 +14,10 @@ const NavigationButton = () => {
 
       <nav className="navigation__nav">
         <ul className="navigation__list">
-          <li className="navigation__item"><a href="#" className="navigation__link">About GCL</a></li>
-          <li className="navigation__item"><a href="#" className="navigation__link">Statement of faith</a></li>
-          <li className="navigation__item"><a href="#" className="navigation__link">Calendar of activities</a></li>
+          <li className="navigation__item"><a href="#" className="navigation__link">About LINC</a></li>
+          <li className="navigation__item"><a href="#" className="navigation__link">Important Dates</a></li>
           <li className="navigation__item"><a href="#" className="navigation__link">Our stories</a></li>
+          <li className="navigation__item"><a href="#" className="navigation__link">Pricing</a></li>
           <li className="navigation__item"><a href="#" className="navigation__link">Get in touch</a></li>
         </ul>
       </nav>

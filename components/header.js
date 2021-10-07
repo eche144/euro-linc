@@ -1,11 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
-import styles from '../styles/header.module.scss'
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <div className={styles.header__logoBox}>
+    <header className='header'>
+      <div className='header__logo-box'>
         <img
           src="/logo-white.png"
           alt='Logo'

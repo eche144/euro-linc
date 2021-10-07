@@ -13,38 +13,34 @@ const Footer = () => {
           height='100'
         />
       </div>
-      <div className='row'>
-        <div className='col-1-of-2'>
-          <div className='footer__navigation'>
-            <ul className='footer__list'>
-              <li className='footer__item'>
-                <a href='#' className='footer__link'>
-                  About Us
-                </a>
-              </li>
-              <li className='footer__item'>
-                <a href='#' className='footer__link'>
-                  Contact
-                </a>
-              </li>
-              <li className='footer__item'>
-                <a href='#' className='footer__link'>
-                  Resources
-                </a>
-              </li>
-              <li className='footer__item'>
-                <a href='#' className='footer__link'>
-                  Good News
-                </a>
-              </li>
-              <li className='footer__item'>
-                <a href='#' className='footer__link'>
-                  Prayer
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <div className='footer__navigation'>
+        <ul className='footer__list'>
+          <li className='footer__item'>
+            <a href='#' className='footer__link'>
+              About Us
+            </a>
+          </li>
+          <li className='footer__item'>
+            <a href='#' className='footer__link'>
+              Contact
+            </a>
+          </li>
+          <li className='footer__item'>
+            <a href='#' className='footer__link'>
+              Resources
+            </a>
+          </li>
+          <li className='footer__item'>
+            <a href='#' className='footer__link'>
+              Good News
+            </a>
+          </li>
+          <li className='footer__item'>
+            <a href='#' className='footer__link'>
+              Prayer
+            </a>
+          </li>
+        </ul>
       </div>
     </footer>
   )
