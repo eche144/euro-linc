@@ -21,7 +21,7 @@ export default function Layout({ children, home }) {
               width={144}
               alt="Logo"
             />
-            <h1 className={utilStyles.heading2Xl}>Gator Christian Life</h1>
+            <h1 className={utilStyles.heading2Xl}>LINC Europe</h1>
           </>
         ) : (
           <>
@@ -39,7 +39,7 @@ export default function Layout({ children, home }) {
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>Gator Christian Life</a>
+                <a className={utilStyles.colorInherit}>LINC Europe</a>
               </Link>
             </h2>
           </>

@@ -5,13 +5,13 @@ const SectionAbout = () => {
     <section className="section-about">
     <div className="u-center-text u-margin-bottom-big">
       <h2 className="heading-secondary">
-        We're just a little church with a big God.
+        Join a little team with a big God.
       </h2>
     </div>
     <div className="row">
       <div className="col-1-of-2">
         <h3 className="heading-tertiary u-margin-bottom-small">
-          Bringing college students to Christ.
+          How then will they call on Him in whom they have not believed?
         </h3>
         <p className="paragraph">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
@@ -21,7 +21,7 @@ const SectionAbout = () => {
         </p>
 
         <h3 className="heading-tertiary u-margin-bottom-small">
-          Preparing them for a lifetime of service.
+          Go therefore.
         </h3>
         <p className="paragraph">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente

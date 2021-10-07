@@ -27,9 +27,6 @@ body {
     font-size: 6rem;
     font-weight: 400;
     letter-spacing: 1.5rem;
-    animation-name: moveInLeft;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
 
     @include respond(phone) {
       letter-spacing: 0.5rem;
@@ -46,9 +43,6 @@ body {
     font-size: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.8rem;
-    animation-name: moveInRight;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
 
     @include respond(phone) {
       letter-spacing: 0.5rem;

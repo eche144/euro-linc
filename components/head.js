@@ -16,8 +16,7 @@ const Head = () => {
       <link rel='shortcut icon' type='image/png' href='images/logo-white.png' />
 
       <title>
-        Gator Christian Life | Bringing college students to Christ and preparing
-        them for a lifetime of service
+        Euro LINC | Laborers Impacting Nations for Christ
       </title>
     </>
   )

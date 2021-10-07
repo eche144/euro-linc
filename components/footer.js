@@ -45,11 +45,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className='col-1-of-2'>
-          <p className='footer__copyright'>
-            Copyright &copy; Gator Christian Life
-          </p>
-        </div>
       </div>
     </footer>
   )
